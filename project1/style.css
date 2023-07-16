@@ -1,0 +1,47 @@
+/* Set the background image and adjust the font family for the whole body */
+body {
+    background-image: url(img.png);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+/* Reset margin, padding, and list style for unordered lists */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Styling for each list item */
+ul li {
+    float: left;
+    width: 200px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    background-color: darkgray;
+}
+
+/* Styling for the anchor tag within list items */
+ul li a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.9;
+    display: block;
+    text-align: center;
+}
+
+/* Styling when hovering over anchor tags */
+ul li a:hover {
+    background-color: orange;
+}
+
+/* Hide sub-level list items by default */
+ul li ul li {
+    display: none;
+}
+
+/* Display sub-level list items when hovering over their parent list item */
+ul li:hover ul li {
+    display: block;
+}
